@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.percentlayouttest.MainActivity">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="20%"
+        android:background="#33FF0000"
+        android:text="width:70% height:20%"
+        android:gravity="center"
+        android:layout_gravity="left|top"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="20%"
+        android:gravity="center"
+        android:layout_gravity="top|right"
+        android:background="#5000FF00"
+        android:text="text"
+        />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="10%"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:background="#330000FF"
+        android:text="点击我"
+        />
+
+</android.support.percent.PercentFrameLayout>

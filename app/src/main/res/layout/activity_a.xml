@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="#33ffff00"
+        android:text="width:70%,height:20%"
+        android:gravity="center"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="70%"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="30%"
+        android:layout_alignParentRight="true"
+        android:background="#baa6a6"
+        android:text="点击我有惊喜"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="70%"
+        android:src="@drawable/timg"
+        android:layout_below="@+id/text"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%"
+        android:layout_alignParentBottom="true"
+        android:text="空白"
+        android:background="#08dfea"
+        android:gravity="center"
+        />
+
+
+</android.support.percent.PercentRelativeLayout>
